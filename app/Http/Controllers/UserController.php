@@ -72,7 +72,7 @@ class UserController extends Controller
     {
         $req->validate(
             [
-                'id_pengguna' => 'required|unique:users,username|regex:/^[0-9a-z]+$/',
+                'id_pengguna' => 'required|regex:/^[0-9a-z]+$/',
                 'pin' => 'required|numeric|digits:6'
             ]);
 
